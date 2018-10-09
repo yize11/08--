@@ -5,6 +5,7 @@ p = name.rfind('.')
 s = name[ :p]
 e = name[p: ]
 namenum = s+'备份'+e
+f=open(name,'r')
 f1 = open(namenum,'w')
 while True:
     content = f.read(1024)
